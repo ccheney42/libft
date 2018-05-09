@@ -12,15 +12,12 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char        *ft_strdup(const char *s1)
 {
-	size_t	len;
-	char	*s2;
-
-	len = ft_strlen(s1) + 1;
-	s2 = (char *)malloc(sizeof(char) * len);
-	if (!s2)
-		return (NULL);
-	ft_strcpy(s2, s1);
-	return (s2);
+    char        *s2;
+    
+    s2 = ft_strnew(ft_strlen(s1));
+    if (s2)
+        return (ft_strcpy(s2, (char*)s1));
+    return (0);
 }
