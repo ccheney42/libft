@@ -6,7 +6,7 @@
 /*   By: ccheney <ccheney@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 18:51:32 by ccheney           #+#    #+#             */
-/*   Updated: 2018/03/05 13:54:56 by ccheney          ###   ########.fr       */
+/*   Updated: 2018/05/09 16:28:48 by ccheney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_strdel(char **as)
 {
-	if (as != NULL)
-	{
-		free(*as);
-		*as = NULL;
-	}
+	if (!as || !*as)
+		return ;
+	free(*as);
+	*as = NULL;
 }
