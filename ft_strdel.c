@@ -6,16 +6,16 @@
 /*   By: ccheney <ccheney@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 18:51:32 by ccheney           #+#    #+#             */
-/*   Updated: 2018/04/27 21:04:29 by ccheney          ###   ########.fr       */
+/*   Updated: 2018/05/09 16:28:48 by ccheney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void        ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
-    if (!as || !*as)
-        return ;
-    free(*as);
-    *as = NULL;
+	if (!as || !*as)
+		return ;
+	free(*as);
+	*as = NULL;
 }

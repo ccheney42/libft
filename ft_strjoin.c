@@ -6,15 +6,15 @@
 /*   By: ccheney <ccheney@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 19:22:02 by ccheney           #+#    #+#             */
-/*   Updated: 2018/04/27 21:15:21 by ccheney          ###   ########.fr       */
+/*   Updated: 2018/05/09 16:27:55 by ccheney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char        *ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
-	char *temp;
+	char	*temp;
 
 	if (!s1 || !s2)
 		return (NULL);
