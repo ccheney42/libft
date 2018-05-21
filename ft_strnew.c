@@ -6,7 +6,7 @@
 /*   By: ccheney <ccheney@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 18:48:48 by ccheney           #+#    #+#             */
-/*   Updated: 2018/04/23 17:21:03 by ccheney          ###   ########.fr       */
+/*   Updated: 2018/05/21 15:46:12 by ccheney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ char	*ft_strnew(size_t size)
 	temp = (char *)(ft_memalloc(sizeof(char) * size + 1));
 	if (!temp)
 		return (NULL);
-	ft_bzero(temp, size + 1);
+	ft_memset(temp, (int)'\0', size + 1);
 	return (temp);
 }
